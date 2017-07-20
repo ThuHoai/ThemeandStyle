@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:padding="10dp"
+    tools:context="com.example.thuhoai.themeandstyle.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/images"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtDG"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Đơn giá "
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignBaseline="@+id/edtDG"
+            />
+
+        <Button
+            android:id="@+id/btnGiam"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/edtGiam"
+            android:layout_alignBottom="@+id/edtGiam"
+            android:layout_alignRight="@+id/btnTinh"
+            android:background="@drawable/selector"
+            android:text="-" />
+
+        <EditText
+            android:id="@+id/edtDG"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="25"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/txtDG"
+            />
+
+        <Button
+            android:id="@+id/btnTinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tính"
+android:background="@drawable/selector"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@+id/edtDG"
+            android:layout_alignBottom="@+id/edtDG"
+            android:layout_toEndOf="@+id/edtDG" />
+
+        <TextView
+            android:id="@+id/txtTT1"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Tiền Trừ"
+
+            android:layout_below="@+id/btnTang"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/txtTT2"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="37,5"
+         android:textStyle="normal"
+            android:layout_alignBaseline="@+id/txtTT1"
+            android:layout_alignBottom="@+id/txtTT1"
+            android:layout_alignLeft="@+id/edtGiam"
+            android:layout_alignRight="@id/edtGiam"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chkSticke"
+            android:layout_below="@+id/txtTT3"
+            android:layout_marginTop="18dp"
+            android:text="Ghi nhớ ?"
+            android:layout_alignRight="@+id/textView6"
+            android:layout_alignLeft="@+id/textView6"
+            />
+
+        <TextView
+            android:id="@+id/txtGiam"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Giảm"
+            android:layout_alignRight="@id/txtDG"
+            android:layout_alignBaseline="@+id/edtGiam"
+            android:layout_alignBottom="@+id/edtGiam"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/btnTang"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="+"
+            android:background="@drawable/selector"
+            android:layout_alignBaseline="@+id/edtGiam"
+            android:layout_below="@+id/btnTinh"
+            android:layout_alignStart="@+id/btnTinh" />
+
+        <TextView
+            android:id="@+id/txtTT3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thành Tiền"
+            android:layout_marginTop="23dp"
+
+            android:layout_below="@+id/txtTT1"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/edtGiam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="7"
+            android:text="0 %"
+            android:textColor="#000"
+            android:layout_alignRight="@+id/edtDG"
+            android:layout_alignLeft="@+id/edtDG"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/btnTinh"
+            android:layout_toEndOf="@+id/txtTT3" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="2250000"
+           android:textStyle="normal"
+            android:layout_above="@+id/chkSticke"
+            android:layout_alignStart="@+id/txtTT2" />
+
+    </RelativeLayout>
+</FrameLayout>

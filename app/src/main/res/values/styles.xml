@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:textViewStyle">@style/Custom.CustomTextView</item>
+        <item name="android:editTextStyle">@style/Custom.CustomEditex</item>
+        <item name="android:buttonStyle" >@style/Custom.CustomButtom</item>
+        <item name="checkboxStyle">@style/CustomCheckBox</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Custom">
+        <item name="android:fontFamily">Time New Romance</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+    <style name="Custom.CustomEditex" parent="Base.Widget.AppCompat.EditText">
+        <item name="android:textColor">#07f259</item>
+    </style>
+
+    <style name="Custom.CustomTextView">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Custom.CustomButtom" parent="Base.Widget.AppCompat.Button" >
+        <item name="android:background" >#FFF2EA07</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+    <style name="CustomCheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+</resources>
